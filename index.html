@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Site dos Pros 😎</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff0000);
+      background-size: 400% 400%;
+      animation: animBG 5s infinite;
+      color: #fff;
+      text-align: center;
+    }
+
+    @keyframes animBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 5em;
+      text-shadow: 3px 3px #000;
+      margin-top: 50px;
+      animation: pisca 0.5s infinite;
+    }
+
+    @keyframes pisca {
+      0%, 100% { color: #ff0; }
+      50% { color: #0ff; }
+    }
+
+    .emoji-rain {
+      font-size: 2em;
+      animation: gira 2s linear infinite;
+      margin: 10px;
+    }
+
+    @keyframes gira {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .message {
+      font-size: 2em;
+      margin: 40px auto;
+      width: 80%;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border: 5px dashed #fff;
+      border-radius: 20px;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SITE DOS PROS 😎</h1>
+
+  <div class="emoji-rain">🔥🎉👯‍♀️💥🤪🥳💃🦄👾✨</div>
+
+  <div class="message">
+    <p>IIIIOOOOOOOOOOOO, <strong>GAB</strong> 🎈</p>
+    <p>VAMOS DE DOIS MESES DE AMIZADE 💖</p>
+    <p>SÓ OS PROS COMEMORAM O MÊSAMIZADE. 💪</p>
+  </div>
+
+  <div class="emoji-rain">🍕🎸👑😎🤯🍿🚀🧠💅🐸</div>
+
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio automático 😢
+  </audio>
+
+</body>
+</html>
