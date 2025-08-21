@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Site dos Pros 😎</title>
+
+  <!-- Fonte quadrada do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-family: 'Press Start 2P', cursive;
       background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff0000);
       background-size: 400% 400%;
       animation: animBG 5s infinite;
@@ -33,7 +37,8 @@
       50% { color: #0ff; }
     }
 
-    .emoji-rain {
+    /* Emojis de cima: girando */
+    .emoji-gira {
       font-size: 2em;
       animation: gira 2s linear infinite;
       margin: 10px;
@@ -42,6 +47,18 @@
     @keyframes gira {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
+    }
+
+    /* Emojis de baixo: pulsando */
+    .emoji-pulsa {
+      font-size: 2em;
+      animation: pulsa 1s infinite;
+      margin: 10px;
+    }
+
+    @keyframes pulsa {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.5); }
     }
 
     .message {
@@ -63,15 +80,17 @@
 
   <h1>SITE DOS PROS 😎</h1>
 
-  <div class="emoji-rain">🔥🎉👯‍♀️💥🤪🥳💃🦄👾✨</div>
+  <!-- Emojis de cima (giram) -->
+  <div class="emoji-gira">📍📍📍🐼🐼🐼📍📍😽😽😽💟💟💜💟</div>
 
   <div class="message">
-    <p>IIIIOOOOOOOOOOOO, <strong>GAB</strong> 🎈</p>
-    <p>VAMOS DE DOIS MESES DE AMIZADE 💖</p>
-    <p>SÓ OS PROS COMEMORAM O MÊSAMIZADE. 💪</p>
+    <p>IIIIIIIIIIOOOOOOOOOO, MINHA QUERIDA <strong>GAB PEROLITO🐼📍</strong> 🎈</p>
+    <p>ESPERO QUE SEJAMOS AMIGOS PARA SEMPRE 4EVER AAAAAAA</p>
+    <p>AMO VOSE, GAB </p>
   </div>
 
-  <div class="emoji-rain">🍕🎸👑😎🤯🍿🚀🧠💅🐸</div>
+  <!-- Emojis de baixo (pulsam) -->
+  <div class="emoji-pulsa">💜💜💜💜💟💟💟💜💜💟💟💜💜💟💜💟💜💜💟💜♾♾♾♾</div>
 
   <audio autoplay loop>
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
